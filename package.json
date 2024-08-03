@@ -1,6 +1,12 @@
 {
   "devDependencies": {
+    "cpx": "^1.2.1",
     "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.7"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "predeploy": "cpx \"src/**/*\" build",
+    "deploy": "gh-pages -d build"
   }
 }
