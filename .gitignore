@@ -1,6 +1,9 @@
 # WebStorm
 .idea
 
+# build
+build
+
 # Logs
 logs
 *.log
