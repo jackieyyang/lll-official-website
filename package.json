@@ -6,7 +6,7 @@
   },
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "predeploy": "cpx \"src/**/*\" build",
+    "predeploy": "npx cpx \"src/**/*\" build",
     "deploy": "gh-pages -d build"
   }
 }
