@@ -6,40 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="output.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <title>LifeLong Learning Club</title>
+    <title>Lifelong Learning Club</title>
 </head>
 
 <body>
+
 <!-- header -->
-<div class="w-full shadow-md">
-    <div class="mx-auto box-border flex items-center p-4 max-w-[1440px] min-h-24">
-        <div><img src="img/school-logo.png" class="md:h-[52px] h-[38px]"></div>
-        <div class="flex flex-grow"></div>
+<header id="header" class="sticky top-0 w-full transition-all duration-200">
+    <div class="mx-auto flex items-center p-4 max-w-[1440px]">
+        <img src="img/school-logo.png" class="md:h-[52px] h-[38px]" alt="School Logo">
+        <div class="flex-grow"></div>
         <div class="flex items-center space-x-4">
-            <div class="w-[38px] md:w-[52px] h-[38px] md:h-[52px] bg-[rgb(0,0,0)]/60 flex justify-center items-center">
-                <img src="img/notification.svg" class="h-4 md:h-7">
+            <div class="flex items-center justify-center bg-black/60 w-[38px] md:w-[52px] h-[38px] md:h-[52px]">
+                <img src="img/notification.svg" class="h-4 md:h-7" alt="Notifications">
             </div>
-            <div class="w-[38px] md:w-[52px] h-[38px] md:h-[52px] bg-[rgb(0,0,0)]/60 flex justify-center items-center">
-                <img src="img/search.svg" class="h-4 md:h-7">
+            <div class="flex items-center justify-center bg-black/60 w-[38px] md:w-[52px] h-[38px] md:h-[52px]">
+                <img src="img/search.svg" class="h-4 md:h-7" alt="Search">
             </div>
             <div class="w-[38px] md:w-[52px] h-[38px] md:h-[52px] bg-[#d71440] flex justify-center items-center">
-                <img src="img/list.svg" class="h-4 md:h-7">
+                <img src="img/list.svg" class="h-4 md:h-7" alt="List">
             </div>
         </div>
     </div>
+</header>
+
+<!-- header image -->
+<div class="h-fit w-full header-image">
+    <img src="img/welcome-pc.png" class="w-full hidden md:block max-h-[800px] max-w-[1920px] mx-auto">
+    <img src="img/welcome-mobile.png" class="block md:hidden w-full">
 </div>
+
+<!-- header title -->
+<div class="bg-[#0054A6] w-full h-16 flex justify-center items-center text-white font-bold md:hidden">
+    Lifelong Learning Club
+</div>
+
+
 <!-- main -->
-<div class="box-border min-h-96">
-    <h1 class="text-3xl font-bold underline">Welcome to the LifeLong Learning Club</h1>
-    <p>Join us in our mission to learn and grow together.</p>
-    <p>Our club is open to all who are interested in learning new things and meeting new people.</p>
-    <p>Our meetings are held every Wednesday at 7:00 PM in the community center.</p>
-    <p>For more information, please contact us</p>
-</div>
+<main class="w-full">
+    <div class="mx-auto p-4 max-w-[1440px]">
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16">
+            <div class="container mx-auto">
+                <h2 class="mx-auto w-fit mb-8 text-3xl font-semibold">About Us</h2>
+                <p class="text-lg">The LifeLong Learning Club is dedicated to providing academic support, professional
+                    development, and social activities for NTU EEE MSc students.</p>
+                <p class="text-lg">Our team members come from diverse backgrounds, contributing to the club's growth and
+                    the development of its members.</p>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="py-16">
+            <div class="container mx-auto">
+                <h2 class="mx-auto mb-8 w-fit text-3xl font-semibold">Events</h2>
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                    <div class="bg-[#f9f9f9] p-8 rounded-lg">
+                        <h3 class="mb-4 text-xl font-semibold">Lab Tours (ALTi)</h3>
+                        <p>We organize tours of NTU and other corporate labs to give students firsthand experience with
+                            cutting-edge technology.</p>
+                    </div>
+                    <div class="bg-[#f9f9f9] p-8 rounded-lg">
+                        <h3 class="mb-4 text-xl font-semibold">Student Support and Engagement Projects</h3>
+                        <p>We offer various support projects like the Fruit Sharing Initiative and CAPS airport shuttle
+                            service to help MSc students better adapt to their studies and life.</p>
+                    </div>
+                    <div class="bg-[#f9f9f9] p-8 rounded-lg">
+                        <h3 class="mb-4 text-xl font-semibold">Workshops and Seminars</h3>
+                        <p>We hold workshops and seminars to enhance students' professional skills and industry
+                            knowledge.</p>
+                    </div>
+                    <div class="bg-[#f9f9f9] p-8 rounded-lg">
+                        <h3 class="mb-4 text-xl font-semibold">Leadership and Skill Development</h3>
+                        <p>Through club activities, we cultivate students' leadership and teamwork abilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-16">
+            <div class="container mx-auto">
+                <h2 class="mx-auto w-fit mb-8 text-3xl font-semibold">Contact Us</h2>
+                <p class="text-lg">If you have any questions or suggestions, please do not hesitate to contact us
+                    through the following methods:</p>
+                <ul class="mt-4 list-disc pl-8">
+                    <li>Email: E220040@e.ntu.edu.sg</li>
+                    <li>Phone: +65 88200015</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+</main>
+
 <!-- footer -->
-<div class="w-full bg-[#1b1c62]">
-    <div class="mx-auto box-border flex flex-col p-4 max-w-[1440px] min-h-28 xl:flex-row">
-        <div class="box-border w-full border-b-2 px-2 pb-4 text-white xl:border-b-0 xl:border-r-2 xl:w-1/4">
+<footer class="bg-[#1b1c62]">
+    <div class="mx-auto flex flex-col p-4 max-w-[1440px] xl:flex-row">
+        <div class="w-full border-b-2 px-2 pb-4 text-white xl:border-b-0 xl:border-r-2 xl:w-1/4">
             Nanyang Technological University<br>
             50 Nanyang Avenue, Singapore 639798<br>
             Tel: (65) 67911744<br>
@@ -51,33 +116,52 @@
             11 Mandalay Road, Singapore 308232<br>
             Tel: (65) 65138572<br>
         </div>
-        <div class="box-border w-full border-b-2 px-2 py-4 text-white xl:border-b-0 xl:border-r-2 xl:w-1/4 xl:px-8 xl:py-0 space-y-4">
-            <div class="mb-2 text-xl font-bold">Get in touch</div>
+        <div class="w-full border-b-2 px-2 py-4 text-white xl:border-b-0 xl:border-r-2 xl:w-1/4 xl:px-8 xl:py-0 space-y-4">
+            <div class="text-xl font-bold">Get in touch</div>
             <div>Visiting NTU</div>
             <div>Careers</div>
             <div>A-Z Directory</div>
             <div>Contact Us</div>
         </div>
-        <div class="box-border w-full border-b-2 px-2 py-4 text-white xl:border-b-0 xl:border-r-2 xl:w-1/4 xl:px-8 xl:py-0 space-y-4">
-            <div class="mb-2 text-xl font-bold">Quick links</div>
+        <div class="w-full border-b-2 px-2 py-4 text-white xl:border-b-0 xl:border-r-2 xl:w-1/4 xl:px-8 xl:py-0 space-y-4">
+            <div class="text-xl font-bold">Quick links</div>
             <div>中文</div>
             <div>NTU Library</div>
             <div>Supplier</div>
             <div>Staff Intranet</div>
             <div>Students Intranet</div>
         </div>
-        <div class="box-border w-full px-2 py-4 text-white xl:border-b-0 xl:w-1/4 xl:px-8 xl:py-0 space-y-4">
-            <div class="mb-2 text-xl font-bold">Connect With Us</div>
-            <div class="flex flex-row space-x-4">
-                <img src="img/facebook.svg" class="h-7">
-                <img src="img/twitter.svg" class="h-7">
-                <img src="img/instagram.svg" class="h-7">
-                <img src="img/youtube.svg" class="h-7">
-                <img src="img/tiktok.svg" class="h-7">
+        <div class="w-full px-2 py-4 text-white xl:border-b-0 xl:w-1/4 xl:px-8 xl:py-0 space-y-4">
+            <div class="text-xl font-bold">Connect With Us</div>
+            <div class="flex space-x-4">
+                <img src="img/facebook.svg" class="h-7" alt="Facebook">
+                <img src="img/twitter.svg" class="h-7" alt="Twitter">
+                <img src="img/instagram.svg" class="h-7" alt="Instagram">
+                <img src="img/youtube.svg" class="h-7" alt="YouTube">
+                <img src="img/tiktok.svg" class="h-7" alt="TikTok">
             </div>
             <div>&copy; 2024 Jackie Yang</div>
         </div>
     </div>
-</div>
+</footer>
+
+<script>
+	const header = document.getElementById('header');
+	const scrollThreshold = 1; // 设置滚动阈值
+
+	window.addEventListener('scroll', () => {
+		const scrollTop = window.scrollY || document.documentElement.scrollTop;
+		if (scrollTop <= scrollThreshold) {
+			header.classList.add('bg-transparent');
+			header.classList.remove('bg-white');
+			header.classList.remove('shadow-md');
+		} else {
+			header.classList.remove('bg-transparent');
+			header.classList.add('bg-white');
+			header.classList.add('shadow-md');
+		}
+	});
+</script>
 </body>
+
 </html>
